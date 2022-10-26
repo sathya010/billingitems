@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Items and Amount</title>
+    <style>
+        .products{
+            padding: 13px;
+            width: 250px;
+        }
+        .addit{
+            width: 130px;
+            padding: 8px;
+            font-size: 15px;
+            border-radius: 5px;
+
+            font-size:medium;
+        }
+        #inputs{
+            text-align: center;
+            border: 2px solid brown;
+            padding: 10px;
+            width: 600px;
+            margin: auto;
+            border-radius: 10px;
+        }
+         #itemdetails{
+         
+            text-align: center;
+            border: 2px solid blueviolet;
+            border-radius:15px;
+            width: 500px;
+            margin: auto;
+            
+        } 
+        ul{
+            padding: 10px;
+            list-style: none;
+        }
+        li{
+            background-color: lightcoral;
+            margin-top: 5px;
+            padding:7px;
+            font-size:20px;
+            text-align: center;
+            border-radius: 3px;
+            
+        } 
+        #pname{
+            font-size: 18px;
+        }
+        #pcost{
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="inputs">
+            <h2>Products Billing</h2>
+            <form>
+                <input type="text" class="products" id='pname' style="border: 2px solid rgb(181, 181, 88);" placeholder="Enter Product"><br><br>
+                <input type="text" class="products" id='pcost' placeholder="Enter Price" style="border: 2px solid rgb(181, 181, 88);" ><br><br>
+                <button id="additem" class="addit" onmouseover="style='background:lightgreen'" onmouseout="style='none'">Add items</button>
+                <button id="subtotal"  class="addit" onmouseover="style='background:skyblue'" onmouseout="style='none'" disabled:true>Total Amount</button>
+                <button id="clearall" class="addit" onmouseover="style='background:lightgreen'" onmouseout="style='none'">Clear All</button>
+
+            </form>
+            <br><br>
+
+        </div><div id="billslip" style="text-align:center;"></div>
+        <br><br>
+    </div>
+    <script src="./itemsprices.js"></script>
+</body>
+</html>
